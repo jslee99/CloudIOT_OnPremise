@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
     get_data(entire_date).then((result) => {
         body = ``;
         result.forEach(element =>{
-            body += element.sleep + '\n';
+            body += element.environment + '\n';
         });
         res.send(body);
     });
