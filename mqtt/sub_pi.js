@@ -22,7 +22,7 @@ async function insert_document(pi_data, fitbit_data) {//when message comes from 
     } finally {
       await db_client.close();
     }
-  }
+}
 
   
 //======================= mqtt

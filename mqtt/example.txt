@@ -5,8 +5,14 @@ subscribe pi
 3. store data in S3
 
 
-sudo systemctl (stop/start) mosquitto
+install mongodb
+ubuntu에 mongod 설치하기 및 오류 났을때
+기본적인 설치 : https://askubuntu.com/questions/842592/apt-get-fails-on-16-04-or-18-04-installing-mongodb
+오류 났을때 : https://askubuntu.com/questions/1403619/mongodb-install-fails-on-ubuntu-22-04-depends-on-libssl1-1-but-it-is-not-insta
 
+
+
+mosquitto configration
 1) mosquitto 설치하고
 2) mosquitto.conf에
 listener 1883 0.0.0.0
@@ -16,6 +22,7 @@ protocol mqtt
 4) mosquitto실행
 
 
+background execution(sudo systemctl stop/start mongod/mosquitto)
 
 
-db.sleep_data.insert({"date":ISODate("2016-03-03T08:00:00.000"),"fitbit":"fitbit_data","sleep":"sleep_data"});
+.find({"date": {$gte: ISODate("2023-04-28T00:00:00.000Z"), $lte: ISODate("2023-04-29T00:00:00.000Z")}})
