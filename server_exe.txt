@@ -1,5 +1,0 @@
-1. AWS에서 main ubuntu 실행
-
-2. mosquitto, mongodb, sub_pi.js ,server.js background 실행
-
-3. 웹브라우저 통해 퍼블릭 ip로 접속
