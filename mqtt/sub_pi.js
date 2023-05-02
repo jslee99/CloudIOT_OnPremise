@@ -40,7 +40,7 @@ mqtt_client.on('connect', () =>{
 });
 
 
-mqtt_client.on("error", (error) => { 
+mqtt_client.on("error", (error) => {
   console.log("Can't connect / " + error);
 });
 

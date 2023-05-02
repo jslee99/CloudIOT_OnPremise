@@ -25,4 +25,4 @@ protocol mqtt
 background execution(sudo systemctl stop/start mongod/mosquitto)
 
 
-.find({"date": {$gte: ISODate("2023-04-28T00:00:00.000Z"), $lte: ISODate("2023-04-29T00:00:00.000Z")}})
+mongodb authentication : 해결해야만 document가 사라지는 문제 해결 가능
